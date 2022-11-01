@@ -1,0 +1,73 @@
+body{
+font-family: 'Poppins';
+font-style: normal;
+}
+
+.toolbar{ 
+display: flex;
+justify-content: space-between;
+}
+
+.logo{
+width: 76px;
+height: 20px;
+font-weight: 700;
+font-size: 18px;
+line-height: 20px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #6070FF;
+}
+
+.hamburger{
+background-repeat: no-repeat;
+margin-top: 15px;
+}
+
+.headline{
+    background-image: url(images/header-bg.png);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.headline-title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    color: #172B4D;
+    padding: 0 24px;
+}
+
+.headline-description {
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #344563;
+padding: 0 24px;
+}
+
+.social {   
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+color: #7F8CFF;
+padding: 0 24px;   
+}
+
+.social-icons {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 170.17px;
+height: 20px; 
+}
+
+.social-icons, li {
+    list-style: none;
+    padding-left: 12px;
+}
+
