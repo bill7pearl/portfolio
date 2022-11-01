@@ -9,8 +9,6 @@ justify-content: space-between;
 }
 
 .logo{
-width: 76px;
-height: 20px;
 font-weight: 700;
 font-size: 18px;
 line-height: 20px;
@@ -30,6 +28,7 @@ margin-top: 15px;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+    height: 718px;
 }
 
 .headline-title{
@@ -50,7 +49,10 @@ color: #344563;
 padding: 0 24px;
 }
 
-.social {   
+.social {  
+display: flex;
+align-items: center;
+height: 24px;     
 font-weight: 500;
 font-size: 16px;
 line-height: 24px;
@@ -70,4 +72,123 @@ height: 20px;
     list-style: none;
     padding-left: 12px;
 }
+
+.projects {
+    display: grid;
+    row-gap: 12px;
+    height: 596px;
+}
+
+.project1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.project2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.project3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.project4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.tonic-title {
+    height: 36px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172B4D; 
+}
+
+.projects-title {
+    height: 80px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172B4D;
+}
+
+.infos {
+    display: flex;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    align-self: center;
+    padding: 0 12px;
+}
+
+.canopy {
+    color: #344563;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    align-self: center;
+}
+
+.tech-date {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #7A869A;
+}
+
+.projects-description {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #344563;
+}
+
+.project-languages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    min-width: 203px;
+    height: 24px;
+    gap: 8px;
+}
+
+
+.project-list {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #6070FF;
+    border-radius: 8px;
+    padding-right: 12px;
+    background: #EBEBFF;
+}
+
+.projects-btn {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+padding: 16px;
+border: 1px solid #6070FF;
+border-radius: 16px;
+font-weight: 500;
+font-size: 17px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: #396DF2;
+background: #FFFFFF;
+}
+
+
+
+
+
+
 
