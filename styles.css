@@ -342,3 +342,20 @@ hr {
   height: 1px;
   background: #dfe1e6;
 }
+
+.contact-me {
+  display: flex;
+  background: #fff;
+  background-image: url(images/contact-me-bg);
+  flex-direction: column;
+}
+
+.contact-me-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  height: 56px;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
