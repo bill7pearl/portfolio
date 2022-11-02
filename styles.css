@@ -345,11 +345,6 @@ hr {
 
 .contact-me {
   display: flex;
-<<<<<<< HEAD
-  background: #fff;
-  background-image: url(images/contact-me-bg);
-  flex-direction: column;
-=======
   background: #6070ff;
   background-image: url(images/contact-bg.png);
   background-repeat: no-repeat;
@@ -358,7 +353,6 @@ hr {
   padding: 24px;
   border-radius: 70px 0 0 0;
   margin-top: 50px;
->>>>>>> 3b4d35f2f1734cbf3343b96303ba580c549bb6f4
 }
 
 .contact-me-title {
@@ -366,17 +360,12 @@ hr {
   font-size: 40px;
   line-height: 52px;
   height: 56px;
-<<<<<<< HEAD
-=======
   margin-top: 103px;
   margin-bottom: 12px;
->>>>>>> 3b4d35f2f1734cbf3343b96303ba580c549bb6f4
   align-items: center;
   text-align: center;
   color: #fff;
 }
-<<<<<<< HEAD
-=======
 
 .contact-me-description {
   font-weight: 400;
@@ -431,4 +420,3 @@ textarea {
   color: #fff;
   background: #6070ff;
 }
->>>>>>> 3b4d35f2f1734cbf3343b96303ba580c549bb6f4
