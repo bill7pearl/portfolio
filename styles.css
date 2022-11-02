@@ -348,6 +348,7 @@ hr {
   background: #6070ff;
   background-image: url(images/contact-bg.png);
   background-repeat: no-repeat;
+  background-size: cover;
   flex-direction: column;
   height: 779px;
   padding: 24px;
