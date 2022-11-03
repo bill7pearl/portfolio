@@ -11,6 +11,10 @@ body {
   background: #fff;
 }
 
+.desk-menu {
+  display: none;
+}
+
 .logo {
   font-weight: 700;
   font-size: 18px;
@@ -420,4 +424,87 @@ textarea {
 .contact-btn:hover {
   color: #fff;
   background: #6070ff;
+}
+
+@media screen and (min-width: 768px) {
+
+  .headline {
+    background: #fff;
+    background-image: url(images/header-desk-bg.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    height: 916px;
+    padding: 0 24px;
+    border-radius: 0 0 0 70px;
+    margin-bottom: 114px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+  
+  .desk-menu {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 259px;
+    height: 40px;
+    margin-right: 70px;
+  }
+
+  .desk-menu,li {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #344563;
+  }
+
+  .logo {
+    padding: 10px 12px;
+    width: 100px;
+    height: 40px;
+    margin-left: 70px;
+  }
+
+  .headline-title {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    height: 122px;
+    letter-spacing: 0.37px;
+    margin-top: 150px;
+    margin-left: 130px;
+    color: #091E42;
+  }
+
+  .headline-description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    margin-left: 130px;
+    color: #344563;
+  }
+
+  .social {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    height: 24px;
+    margin-left: 130px;
+    color: #7F8CFF;
+  }
+
+  .social-icons {
+    height: 70px;
+    margin-left: 130px;
+  }
 }
