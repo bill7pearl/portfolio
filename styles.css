@@ -490,6 +490,7 @@ textarea {
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
+    width: 600px;
     margin-left: 130px;
     color: #344563;
   }
