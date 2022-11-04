@@ -450,6 +450,10 @@ button:hover {
     display: none;
   }
 
+  .desk-header {
+    display: inline-block;
+  }
+
   .desk-menu {
     display: flex;
     align-items: center;
