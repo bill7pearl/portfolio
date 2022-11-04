@@ -508,4 +508,103 @@ textarea {
     height: 70px;
     margin-left: 130px;
   }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 800px;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .project1 {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+  }
+
+  .project2 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .project2 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .project3 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .project4 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+
+  .project1-desk-right {
+    width: 50%;
+    padding: 24px;
+  }
+
+  .tonic-title {
+    margin-bottom: 20px;
+  }
+
+  .projects-title {
+    margin: 0;
+  }
+
+  .project1-desk-left {
+    background-image: url(images/project1-desk-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50%;
+    padding: 24px;
+  }
+
+  .hide-from-desk {
+    display: none;
+  }
+
+  .project2-desk-left {
+    background-image: url(images/project2-desk-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50%;
+    padding: 24px;
+  }
+
+  .project2-desk-right {
+    width: 50%;
+    padding: 24px;
+  }
+
+  .project3-desk-left {
+    background-image: url(images/project3-desk-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50%;
+    padding: 24px;
+  }
+
+  .project3-desk-right {
+    width: 50%;
+    padding: 24px;
+  }
+
+  .project4-desk-left {
+    background-image: url(images/project4-desk-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50%;
+    padding: 24px;
+  }
+
+  .project4-desk-right {
+    width: 50%;
+    padding: 24px;
+  }
 }
