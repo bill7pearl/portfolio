@@ -625,6 +625,7 @@ button:hover {
   .about-myself {
     display: grid;
     grid-template-columns: 40% 60%;
+    margin: 0 70px 100px 70px;
   }
 
   .aboutme-desk-right {
