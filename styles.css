@@ -454,9 +454,11 @@ button:hover {
     width: 259px;
     height: 40px;
     margin-right: 70px;
+    margin-top: 25px;
   }
 
   .desk-menu,li {
+    list-style: none;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
@@ -464,6 +466,11 @@ button:hover {
     display: flex;
     align-items: center;
     text-align: center;
+    color: #344563;
+  }
+
+  .desk-menu,li,a {
+    text-decoration: none;
     color: #344563;
   }
 
@@ -561,7 +568,7 @@ button:hover {
   .project1-desk-left {
     background-image: url(images/project1-desk-bg.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 50%;
     padding: 24px;
   }
@@ -573,7 +580,7 @@ button:hover {
   .project2-desk-left {
     background-image: url(images/project2-desk-bg.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 50%;
     padding: 24px;
   }
@@ -586,7 +593,7 @@ button:hover {
   .project3-desk-left {
     background-image: url(images/project3-desk-bg.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 50%;
     padding: 24px;
   }
@@ -599,7 +606,7 @@ button:hover {
   .project4-desk-left {
     background-image: url(images/project4-desk-bg.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 50%;
     padding: 24px;
   }
