@@ -421,9 +421,10 @@ textarea {
   border-radius: 8px;
 }
 
-.contact-btn:hover {
+button:hover {
   color: #fff;
   background: #6070ff;
+  border-radius: 8px;
 }
 
 @media screen and (min-width: 768px) {
@@ -550,7 +551,7 @@ textarea {
   }
 
   .tonic-title {
-    margin-bottom: 20px;
+    margin: 10px 0;
   }
 
   .projects-title {
@@ -607,4 +608,41 @@ textarea {
     width: 50%;
     padding: 24px;
   }
+
+  .about-myself {
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+
+  .aboutme-desk-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .languages {
+    justify-content: space-between;
+  }
+
+  .languages-list {
+    flex-direction: row;
+  }
+
+  .languages-list-item {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100px;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .under-languages {
+    justify-content: space-between;
+  }
+
+  hr {
+    width: 550px ;
+  }
+
 }
