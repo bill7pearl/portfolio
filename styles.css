@@ -430,7 +430,6 @@ button:hover {
 }
 
 @media screen and (min-width: 768px) {
-
   .headline {
     background: #fff;
     background-image: url(images/header-desk-bg.png);
@@ -447,11 +446,11 @@ button:hover {
   .hamburger {
     display: none;
   }
-  
+
   .desk-menu {
     display: flex;
     align-items: center;
-    padding: 0px;
+    padding: 0;
     gap: 8px;
     width: 259px;
     height: 40px;
@@ -459,7 +458,8 @@ button:hover {
     margin-top: 25px;
   }
 
-  .desk-menu,li {
+  .desk-menu,
+  li {
     list-style: none;
     font-weight: 500;
     font-size: 15px;
@@ -471,7 +471,9 @@ button:hover {
     color: #344563;
   }
 
-  .desk-menu,li,a {
+  .desk-menu,
+  li,
+  a {
     text-decoration: none;
     color: #344563;
   }
@@ -493,7 +495,7 @@ button:hover {
     letter-spacing: 0.37px;
     margin-top: 150px;
     margin-left: 130px;
-    color: #091E42;
+    color: #091e42;
   }
 
   .headline-description {
@@ -511,7 +513,7 @@ button:hover {
     line-height: 24px;
     height: 24px;
     margin-left: 130px;
-    color: #7F8CFF;
+    color: #7f8cff;
   }
 
   .social-icons {
@@ -535,11 +537,6 @@ button:hover {
 
   .project2 {
     display: flex;
-    flex-direction: row;
-  }
-
-  .project2 {
-    display: flex;
     flex-direction: row-reverse;
   }
 
@@ -552,7 +549,6 @@ button:hover {
     display: flex;
     flex-direction: row-reverse;
   }
-  
 
   .project1-desk-right {
     width: 50%;
@@ -651,7 +647,7 @@ button:hover {
   }
 
   hr {
-    width: 550px ;
+    width: 550px;
   }
 
   .contactme-desk {
@@ -677,5 +673,4 @@ button:hover {
   .contact-btn {
     align-self: center;
   }
-
 }
