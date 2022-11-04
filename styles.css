@@ -348,7 +348,7 @@ img {
 }
 
 hr {
-  width: 400px;
+  width: 90%;
   height: 1px;
   background: #dfe1e6;
 }
@@ -655,7 +655,7 @@ button:hover {
   }
 
   hr {
-    width: 550px;
+    width: 90%px;
   }
 
   .contactme-desk {
