@@ -296,6 +296,7 @@ li {
 
 .languages {
   display: flex;
+  justify-content: space-between;
   height: 24px;
   font-weight: 500;
   font-size: 20px;
@@ -333,6 +334,7 @@ img {
 
 .under-languages {
   display: flex;
+  justify-content: space-between;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
