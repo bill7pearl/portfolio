@@ -434,6 +434,12 @@ button:hover {
 }
 
 @media screen and (min-width: 768px) {
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
   .headline {
     background: #fff;
     background-image: url(images/header-desk-bg.png);
@@ -625,7 +631,8 @@ button:hover {
   .about-myself {
     display: grid;
     grid-template-columns: 40% 60%;
-    margin: 0 70px 100px 70px;
+    padding: 70px;
+    margin: 0;
   }
 
   .aboutme-desk-right {
@@ -653,6 +660,23 @@ button:hover {
 
   .under-languages {
     justify-content: space-between;
+  }
+
+  .contact-me {
+    background-image: url(images/contact-desk-bg-fix.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0;
+    padding: 0;
+  }
+
+  #white-corner {
+    position: absolute;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    z-index: -99;
   }
 
   .contactme-desk {
