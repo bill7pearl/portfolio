@@ -10,11 +10,18 @@
 <body>
     <header class="toolbar">
         <h1 class="logo">My Logo</h1>
-        <nav class="hamburger"> <img src="images/hamburger.png" alt=""></nav>
+        <nav class="hamburger"><img src="images/hamburger.png" alt=""></nav>
+        <nav class="desk-header">
+            <ul class="desk-menu">
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section class="headline">
-        <h2 class="headline-title">I’m Billal Glad to see you!</h2>
+        <h2 class="headline-title">I’m Billal <br> Glad to see you!</h2>
         <p class="headline-description">I’m a software developer! 
             I can help you build a product ,
              feature or website Look through some of my work and experience!
@@ -22,18 +29,21 @@
                don’t hestiate to contact me.</p>
         <p class="social">LET'S CONNECT</p>
         <ul class="social-icons">
-            <li><img src="images/twitter.png" alt=""></li>
-            <li><img src="images/linkedin.png" alt=""></li>
-            <li><img src="images/M.png" alt=""></li>
-            <li><img src="images/github.png" alt=""></li>
-            <li><img src="images/hand.png" alt=""></li>
+            <li><a href=""><img src="images/twitter.png" alt=""></a></li>
+            <li><a href=""><img src="images/linkedin.png" alt=""></a></li>
+            <li><a href=""><img src="images/M.png" alt=""></a></li>
+            <li><a href=""><img src="images/github.png" alt=""></a></li>
+            <li><a href=""><img src="images/hand.png" alt=""></a></li>
         </ul>       
     </section>
 
     <section class="projects">
         <div class="project1">
-            <img src="images/div1-bg.png" alt="">
-            <h2 class="tonic-title">Tonic</h2>
+            <div class="project1-desk-left">
+                <img class="hide-from-desk" src="images/div1-bg.png" alt="">
+            </div>
+            <div class="project1-desk-right">
+                <h2 class="tonic-title">Tonic</h2>
              <div class="infos">
                 <p class="canopy">CANOPY</p>
                 <img class="dot" src="images/dot.png" alt="">
@@ -48,12 +58,17 @@
                 <li class="project-list">css</li>
                 <li class="project-list">javaScript</li>
              </ul>
-             <button class="projects-btn">See Project</button>    
+             <button class="projects-btn">See Project</button>
+            </div> 
         </div>
+
         <div class="project2">
-            <img src="images/div2-bg.png" alt="">
-            <h2 class="projects-title">Multi-Post<br>Stories</h2>
-            <div class="infos">
+            <div class="project2-desk-left">
+                <img class="hide-from-desk" src="images/div2-bg.png" alt="">
+            </div>
+            <div class="project2-desk-right">
+                <h2 class="projects-title">Multi-Post<br>Stories</h2>
+             <div class="infos">
                 <p class="canopy">CANOPY</p>
                 <img class="dot" src="images/dot.png" alt="">
                 <p class="tech-date">Back End Dev</p>
@@ -68,10 +83,15 @@
                 <li class="project-list">javaScript</li>
              </ul>
              <button class="projects-btn">See Project</button>
+            </div>
         </div>
+            
         <div class="project3">
-            <img src="images/div3-bg.png" alt="">
-            <h2 class="projects-title">Multi-Post<br>Stories</h2>
+            <div class="project3-desk-left">
+                <img class="hide-from-desk" src="images/div3-bg.png" alt="">
+            </div>
+            <div class="project3-desk-right">
+                <h2 class="projects-title">Multi-Post<br>Stories</h2>
             <div class="infos">
                 <p class="canopy">CANOPY</p>
                 <img class="dot" src="images/dot.png" alt="">
@@ -87,10 +107,15 @@
                 <li class="project-list">javaScript</li>
              </ul>
              <button class="projects-btn">See Project</button>
+            </div>
         </div>
+
         <div class="project4">
-            <img src="images/div4-bg.png" alt="">
-            <h2 class="projects-title">Multi-Post<br>Stories</h2>
+            <div class="project4-desk-left">
+                <img class="hide-from-desk" src="images/div4-bg.png" alt="">
+            </div>
+            <div class="project4-desk-right">
+                <h2 class="projects-title">Multi-Post<br>Stories</h2>
             <div class="infos">
                 <p class="canopy">CANOPY</p>
                 <img class="dot" src="images/dot.png" alt="">
@@ -106,11 +131,13 @@
                 <li class="project-list">javaScript</li>
              </ul>
              <button class="projects-btn">See Project</button>
+            </div>   
         </div>
     </section>
 
     <section class="about-myself">
-        <h2 class="about-me-headline">About<br>Myself</h2>
+        <div class="aboutme-desk-left">
+            <h2 class="about-me-headline">About<br>Myself</h2>
         <p class="about-me-description">Hello I’m a software developer! 
             I can help you build a product ,
             feature or website Look through some of my work and experience!
@@ -118,37 +145,45 @@
             don’t hestiate to contact me.</p>
             <p class="social2">LET'S CONNECT</p>
             <ul class="social-icons2">
-                <li><img src="images/twitter.png" alt=""></li>
-                <li><img src="images/linkedin.png" alt=""></li>
-                <li><img src="images/M.png" alt=""></li>
-                <li><img src="images/github.png" alt=""></li>
-                <li><img src="images/hand.png" alt=""></li>
+                <li><a href=""><img src="images/twitter.png" alt=""></a></li>
+                <li><a href=""><img src="images/linkedin.png" alt=""></a></li>
+                <li><a href=""><img src="images/M.png" alt=""></a></li>
+                <li><a href=""><img src="images/github.png" alt=""></a></li>
+                <li><a href=""><img src="images/hand.png" alt=""></a></li>
             </ul>
             <button class="resume-btn">Get my resume</button>
-            <p class="languages">Languages</p>
+        </div>
+
+        <div class="aboutme-desk-right">
+            <p class="languages">Languages <a href=""><img src="images/down-arrow.png" alt=""></a></p>
             <ul class="languages-list">
-                <li class="languages-list-item"><img src="images/js.png" alt=""> JavaScript</li>
-                <li class="languages-list-item"><img src="images/html5.png" alt=""> HTML</li>
-                <li class="languages-list-item"><img src="images/css3.png" alt=""> CSS</li>
+                <li class="languages-list-item"><img src="images/js.png" alt="">JavaScript</li>
+                <li class="languages-list-item"><img src="images/html5.png" alt="">HTML</li>
+                <li class="languages-list-item"><img src="images/css3.png" alt="">CSS</li>
             </ul>
-            <p class="under-languages">Frameworks</p>
+            <p class="under-languages">Frameworks <a href=""><img src="images/right-arrow.png" alt=""></a></p>
             <hr>
-            <p class="under-languages">Skills</p>
+            <p class="under-languages">Skills <a href=""><img src="images/right-arrow.png" alt=""></a></p>
             <hr>
+        </div>    
         </section>
 
         <section class="contact-me">
-            <h2 class="contact-me-title">Contact me</h2>
-            <p class="contact-me-description">If you have an application you are interested in developing,
+            <div id="white-corner"></div>
+            <div class="contactme-desk">
+                <h2 class="contact-me-title">Contact me</h2>
+                  <p class="contact-me-description">If you have an application you are interested in developing,
                  a feature that you need built or a project that needs coding.
                   I’d love to help with it </p>
-                  <form class="forms" action="https://formspree.io/f/xaykllwd" method="post">
-                    <input class="form-input" type="text" name="name" placeholder="Your name" maxlength="30" required> <br>
-                    <input class="form-input" type="email" name="email" placeholder="example@email.com" required> <br>
-                    <textarea name="message" placeholder="Write your message here" id="" maxlength="500" required></textarea>
-                    <button class="contact-btn">Get In Touch</button>
-                  </form>
-                  
+            </div>
+                  <div class="forms-desk">
+                    <form class="forms" action="https://formspree.io/f/xaykllwd" method="post">
+                        <input class="form-input" type="text" name="name" placeholder="Your name" maxlength="30" required> <br>
+                        <input class="form-input" type="email" name="email" placeholder="example@email.com" required> <br>
+                        <textarea name="message" placeholder="Write your message here" id="" maxlength="500" required></textarea>
+                        <button class="contact-btn">Get In Touch</button>
+                      </form>
+                   </div>
         </section>
 </body>
 </html>
