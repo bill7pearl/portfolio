@@ -655,10 +655,6 @@ button:hover {
     justify-content: space-between;
   }
 
-  hr {
-    width: 90%px;
-  }
-
   .contactme-desk {
     display: flex;
     flex-direction: column;
