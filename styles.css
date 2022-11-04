@@ -15,6 +15,9 @@ body {
   display: none;
 }
 
+.desk-header {
+  display: none;
+}
 .logo {
   font-weight: 700;
   font-size: 18px;
