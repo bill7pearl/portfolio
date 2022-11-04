@@ -654,4 +654,28 @@ button:hover {
     width: 550px ;
   }
 
+  .contactme-desk {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    align-self: center;
+  }
+
+  .contact-me-description {
+    width: 500px;
+    height: 100px;
+    align-self: center;
+  }
+
+  .forms-desk {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    align-self: center;
+  }
+
+  .contact-btn {
+    align-self: center;
+  }
+
 }
