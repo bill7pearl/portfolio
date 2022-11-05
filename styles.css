@@ -507,8 +507,7 @@ button:hover {
     line-height: 60px;
     height: 122px;
     letter-spacing: 0.37px;
-    margin-top: 150px;
-    margin-left: 130px;
+    margin: 150px 0 0 130px;
     color: #091e42;
   }
 
