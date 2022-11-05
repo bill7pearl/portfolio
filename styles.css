@@ -249,7 +249,6 @@ li {
   line-height: 24px;
   color: #344563;
   padding: 0 24px;
-
 }
 
 .social2 {
@@ -706,32 +705,34 @@ button:hover {
     align-self: center;
   }
 }
-     /* transitions and animations */
 
-     .logo {
-      transition: transform 0.5s;
-     }
+/* transitions and animations */
 
-     .logo:hover {
-      transform: scale(1.5) rotate(360deg);
-     }
+.logo,
+h2 {
+  transition: transform 0.5s;
+}
 
-     .desk-menu-items {
-      transition: padding 0.5s;
-     }
+.logo:hover {
+  transform: scale(1.5) rotate(360deg);
+}
 
-     .desk-menu-items:hover {
-      transition-timing-function: ease-out 0.5s;
-      padding: 20px;
-      transform: scale(1.5);
-     }
+.desk-menu-items {
+  transition: padding 0.5s;
+}
 
-     .social-icons-items {
-      transition: padding 0.5s, transform 0.5s;
-     }
+.desk-menu-items:hover {
+  transition-timing-function: ease-out 0.5s;
+  padding: 20px;
+  transform: scale(1.5);
+}
 
-     .social-icons-items:hover {
-      transition-timing-function: ease-out 0.5s;
-      padding: 20px;
-      transform: rotate(360deg) scale(1.5);
-     }
+.social-icons-items {
+  transition: padding 0.5s, transform 0.5s;
+}
+
+.social-icons-items:hover {
+  transition-timing-function: ease-out 0.5s;
+  padding: 20px;
+  transform: rotate(360deg) scale(1.5);
+}
