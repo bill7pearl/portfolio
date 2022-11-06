@@ -96,6 +96,10 @@ li {
   padding: 16px;
 }
 
+img {
+  width: 100%;
+}
+
 .project1 {
   display: flex;
   flex-direction: column;
