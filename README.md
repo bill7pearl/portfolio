@@ -3,6 +3,9 @@
 # Portfolio: setup and mobile first
 > This is the second project in Microverse journey found in Week 1 Day 3, It emphasizes using the Flexbox properties in CSS.
 
+## Live demo
+https://bill7pearl.github.io/portfolio
+
 ## Built With
 - HTML5.
 - CSS3.
@@ -46,7 +49,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
-
-## Live version
-
-https://bill7pearl.github.io/portfolio
