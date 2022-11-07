@@ -46,3 +46,7 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
+
+## Live version
+
+https://bill7pearl.github.io/portfolio
