@@ -88,7 +88,7 @@ a {
   display: flex;
   align-items: center;
   text-align: center;
-  color: #080808;
+  color: #6070ff;
 }
 
 .headline {
@@ -128,7 +128,7 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #000;
+  color: #7f8cff;
   padding: 0 24px;
 }
 
@@ -232,7 +232,7 @@ li {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  color: #080808;
+  color: #7a869a;
 }
 
 .projects-description {
@@ -257,7 +257,7 @@ li {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #080808;
+  color: #6070ff;
   border-radius: 8px;
   padding-right: 12px;
   background: #ebebff;
@@ -316,7 +316,7 @@ li {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #080808;
+  color: #7f8cff;
   padding: 0 24px;
   margin: 0;
 }
@@ -442,7 +442,7 @@ hr {
   line-height: 28px;
   margin-top: 12px;
   text-align: center;
-  color: #080808;
+  color: #ebebff;
 }
 
 .forms {
@@ -456,7 +456,7 @@ hr {
 
 .contact-btn {
   color: #6070ff;
-  background: #000;
+  background: #fff;
   font-size: 17px;
   line-height: 24px;
   padding: 12px 16px;
