@@ -11,6 +11,49 @@ body {
   background: #fff;
 }
 
+/* Javascript menu */
+
+.mobile-menu {
+  position: fixed;
+  transform: translateY(-110%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: rgb(47, 24, 177);
+  list-style: none;
+}
+
+.hamburger {
+  z-index: 100;
+  border: black solid 1px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.menu-item {
+  display: block;
+  margin: 20px 20px;
+  font-size: 30px;
+  list-style: none;
+}
+
+.menu-item,a {
+  text-decoration: none;
+  color: #fff;
+
+}
+
+.close-icon {
+  display: none;
+}
+
+.show-menu {
+  transform: translateY(-4%);
+}
+
 .desk-menu {
   display: none;
 }
