@@ -5,17 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Page</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="toolbar">
         <h1 class="logo">My Logo</h1>
-        <nav class="hamburger"><img src="images/hamburger.png" alt="mobile navigating"></nav>
+        <ul class="mobile-menu">
+            <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
+            <li class="menu-item"><a href="#aboutme">About</a></li>
+            <li class="menu-item"><a href="#contactme">Contact</a></li>
+          </ul>
+          <button class="hamburger">
+            <i class="menu-icon material-icons">menu</i>
+            <i class="close-icon material-icons">close</i>
+          </button>
         <nav class="desk-header">
             <ul class="desk-menu">
-                <li class="desk-menu-items"><a href="">Portfolio</a></li>
-                <li class="desk-menu-items"><a href="">About</a></li>
-                <li class="desk-menu-items"><a href="">About</a></li>
+                <li class="desk-menu-items"><a href="#portfolio">Portfolio</a></li>
+                <li class="desk-menu-items"><a href="#aboutme">About</a></li>
+                <li class="desk-menu-items"><a href="#contactme">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -37,7 +46,7 @@
         </ul>       
     </section>
 
-    <section class="projects">
+    <section class="projects" id="portfolio">
         <div class="project1">
             <div class="project1-desk-left">
                 <img class="hide-from-desk" src="images/div1-bg.png" alt="portfolio one">
@@ -135,7 +144,7 @@
         </div>
     </section>
 
-    <section class="about-myself">
+    <section class="about-myself" id="aboutme">
         <div class="aboutme-desk-left">
             <h2 class="about-me-headline">About<br>Myself</h2>
         <p class="about-me-description">Hello I’m a software developer! 
@@ -168,7 +177,7 @@
         </div>    
         </section>
 
-        <section class="contact-me">
+        <section class="contact-me" id="contactme">
             <div id="white-corner"></div>
             <div class="contactme-desk">
                 <h2 class="contact-me-title">Contact me</h2>
@@ -185,5 +194,6 @@
                       </form>
                    </div>
         </section>
+<script src="app.js"></script>        
 </body>
 </html>
