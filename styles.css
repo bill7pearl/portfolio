@@ -56,8 +56,13 @@ a {
 .hamburger {
   z-index: 100;
   background: #fff;
+  color: #396df2;
   cursor: pointer;
   border: none;
+}
+
+.hamburger:hover {
+  background-color: #fff;
 }
 
 .menu-icon {

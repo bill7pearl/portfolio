@@ -7,10 +7,12 @@ const menuIcon = document.querySelector('.menu-icon');
 function toggleMenu() {
   if (menu.classList.contains('show-menu')) {
     menu.classList.remove('show-menu');
+    hamburger.style.backgroundColor = '#fff';
     closeIcon.style.display = 'none';
     menuIcon.style.display = 'block';
   } else {
     menu.classList.add('show-menu');
+    hamburger.style.backgroundColor = '#6070ff';
     closeIcon.style.display = 'block';
     menuIcon.style.display = 'none';
   }
