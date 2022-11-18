@@ -171,7 +171,7 @@ portfolio.innerHTML = projects;
 const modalContainer = document.getElementById('modal');
 
 // eslint-disable-next-line no-unused-vars
-function showModal() {
+function showModal {
   modalContainer.style.display = 'flex';
 }
 // eslint-disable-next-line no-unused-vars
