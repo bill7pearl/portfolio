@@ -1,3 +1,8 @@
+window.onload = (event) =>{
+
+  console.log('Page Loaded');
+
+};
 const menu = document.querySelector('.mobile-menu');
 const menuItems = document.querySelectorAll('.menu-item');
 const hamburger = document.querySelector('.hamburger');
@@ -25,3 +30,6 @@ menuItems.forEach(
     menuItem.addEventListener('click', toggleMenu);
   },
 );
+
+// JS projects data //
+
