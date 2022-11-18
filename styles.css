@@ -2,6 +2,85 @@ html {
   scroll-behavior: smooth;
 }
 
+.modal-container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  backdrop-filter: blur(10px);
+  background: rgba(8, 19, 43, 0.4);
+  display: none;
+  justify-content: center;
+}
+
+.modal-content {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  gap: 8px;
+  padding: 24px;
+  max-width: 1000px;
+  margin: 25px 15px;
+  position: relative;
+}
+
+.close-modal {
+  float: right;
+  margin-top: 10px;
+  margin-right: 20px;
+  color: #67798e;
+  border: none;
+}
+
+.see-btns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  height: 100px;
+}
+
+.see-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  width: 180px;
+  height: 40px;
+  padding: 8px 25px;
+  border: 1px solid #6070ff;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #396df2;
+  background: #fff;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.popup-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #344563;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -501,6 +580,25 @@ button:hover {
   body {
     padding: 0;
     margin: 0;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+  }
+
+  .left {
+    width: 50%;
+  }
+
+  .right {
+    width: 50%;
+  }
+
+  .popup-languages {
+    padding: 20px;
+    margin-left: 20px;
   }
 
   .headline {
