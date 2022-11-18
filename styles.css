@@ -10,12 +10,11 @@ html {
   left: 0;
   top: 0;
   backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
   background: rgba(8, 19, 43, 0.4);
   display: none;
   justify-content: center;
 }
- 
+
 .modal-content {
   border-radius: 20px;
   display: flex;
@@ -35,7 +34,7 @@ html {
   float: right;
   margin-top: 10px;
   margin-right: 20px;
-  color: #67798E;
+  color: #67798e;
   border: none;
 }
 
@@ -70,18 +69,17 @@ html {
   gap: 20px;
 }
 
-
 .popup-description {
   font-weight: 400;
-font-size: 16px;
-line-height: 30px;
-color: #344563;
+  font-size: 16px;
+  line-height: 30px;
+  color: #344563;
 }
+
 .right {
   display: flex;
   flex-direction: column;
 }
-
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -602,6 +600,7 @@ button:hover {
     padding: 20px;
     margin-left: 20px;
   }
+
   .headline {
     background: #fff;
     background-image: url(images/header-desk-bg.png);
