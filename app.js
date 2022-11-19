@@ -184,10 +184,11 @@ function closeModal() {
 // email form validation
 
 function validation() {
+  const form = document.getElementById('form-validation');
   const formInput = document.getElementById('email').value;
   const errorMsg = document.getElementById('error-msg');
   const regX = /^([a-z\d-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/;
-  document.forms[0].onsubmit = function (f) {
+  form.onsubmit = function (f) {
     if (regX.test(formInput)) {
       errorMsg.style.display = 'none';
     } else {
