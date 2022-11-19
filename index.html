@@ -123,12 +123,13 @@
                  a feature that you need built or a project that needs coding.
                   I’d love to help with it </p>
             </div>
-                  <div class="forms-desk">
-                    <form class="forms" action="https://formspree.io/f/xaykllwd" method="post">
+                  <div class="forms-desk" id="form-validation">
+                    <form id="form-validation" class="forms" action="https://formspree.io/f/xaykllwd" method="post">
                         <input class="form-input" type="text" name="name" placeholder="Your name" maxlength="30" required> <br>
-                        <input class="form-input" type="email" name="email" placeholder="example@email.com" required> <br>
+                        <input class="form-input" type="email" name="email" id="email" placeholder="example@email.com" required> <br>
+                        <p id="error-msg">sent failed! please type your e-mail in lowercases</p>
                         <textarea name="message" placeholder="Write your message here" id="" maxlength="500" required></textarea>
-                        <button class="contact-btn">Get In Touch</button>
+                        <button  onclick="validation()" type="submit" class="contact-btn">Get In Touch</button>
                       </form>
                    </div>
         </section>

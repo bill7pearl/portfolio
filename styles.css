@@ -550,6 +550,16 @@ hr {
   border: 1px solid #fff;
 }
 
+#error-msg {
+  display: none;
+  margin-top: 0;
+  padding: 10px;
+  color: red;
+  line-height: 10px;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+
 textarea {
   color: #172b4d;
   font-size: 17px;

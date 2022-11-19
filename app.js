@@ -1,3 +1,5 @@
+/* eslint-disable func-names */
+/* eslint-disable no-unused-vars */
 const menu = document.querySelector('.mobile-menu');
 const menuItems = document.querySelectorAll('.menu-item');
 const hamburger = document.querySelector('.hamburger');
@@ -177,4 +179,20 @@ function showModal() {
 // eslint-disable-next-line no-unused-vars
 function closeModal() {
   modalContainer.style.display = 'none';
+}
+
+// email form validation
+
+function validation() {
+  const formInput = document.getElementById('email').value;
+  const errorMsg = document.getElementById('error-msg');
+  const regX = /^([a-z\d-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/;
+  document.forms[0].onsubmit = function (f) {
+    if (regX.test(formInput)) {
+      errorMsg.style.display = 'none';
+    } else {
+      errorMsg.style.display = 'flex';
+      f.preventDefault();
+    }
+  };
 }
