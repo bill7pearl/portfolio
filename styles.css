@@ -748,18 +748,17 @@ button:hover {
   }
 
   .project1-desk-left {
-    background-image: url(images/project1-desk-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 50%;
     padding: 24px;
   }
 
   .hide-from-desk {
-    display: none;
+    width: 100%;
+    min-height: 250px;
+    border-radius: 5px;
   }
 
-  .project2-desk-left {
+  /* .project2-desk-left {
     background-image: url(images/project2-desk-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -797,7 +796,7 @@ button:hover {
     width: 50%;
     padding: 24px;
   }
-
+ */
   .about-myself {
     display: grid;
     grid-template-columns: 40% 60%;
