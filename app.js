@@ -28,10 +28,6 @@ menuItems.forEach(
   },
 );
 
-function isOdd(number) {
-  return number % 2 !== 0;
-}
-
 // JS projects data //
 const projectsData = [
   {
@@ -123,8 +119,6 @@ projectsDiv.forEach((div) => {
   if (div.id % 2 === 0) {
     div.style.flexDirection = 'row-reverse'
   }
-  /* div.style.flexDirection = 'row-reverse';
-  console.log(div.id) */
 });
 
 const modalContainer = document.getElementById('modal');
