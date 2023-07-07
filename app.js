@@ -114,13 +114,28 @@ for (let key in projectsData) {
 }
 portfolio.innerHTML = projects;
 
+const mobileView = window.matchMedia("(max-width: 768px)");
+
 const projectsDiv = document.querySelectorAll('.project1');
+
+function handleMobileView(event) {
 projectsDiv.forEach((div) => {
-  if (div.id % 2 === 0) {
+  if (event.matches) {
+    div.style.flexDirection = 'column'
+    console.log(div)
+  }
+  else if (div.id % 2 === 0) {
     div.style.flexDirection = 'row-reverse'
+  } 
+  else if (!event.matches) {
+    div.style.flexDirection = 'row'
   }
 });
+};
 
+  mobileView.addListener(handleMobileView);
+  handleMobileView(mobileView); 
+ 
 const modalContainer = document.getElementById('modal');
 
 // eslint-disable-next-line no-unused-vars
