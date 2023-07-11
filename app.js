@@ -122,7 +122,6 @@ function handleMobileView(event) {
 projectsDiv.forEach((div) => {
   if (event.matches) {
     div.style.flexDirection = 'column'
-    console.log(div)
   }
   else if (div.id % 2 === 0) {
     div.style.flexDirection = 'row-reverse'
