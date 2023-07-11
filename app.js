@@ -107,9 +107,37 @@ for (let key in projectsData) {
         <li class="project-list">${projectsData[key].languages[1]}</li>
         <li class="project-list">${projectsData[key].languages[2]}</li>
      </ul>
-     <button onclick="showModal()" class="projects-btn" id="btn-project-1">See Project</button>
+     <button onclick="showModal(${projectsData[key].id})" class="projects-btn" id="btn-project-1">See Project</button>
     </div> 
-  </div>`
+  </div>
+  <section class="modal-container" id="modal">
+        <div class="modal-content">
+            <h1 class="tonic-title">${projectsData[key].title}<button onclick="closeModal()" class="close-modal">X</button></h1>
+            <div class="infos">
+                <p class="canopy">CANOPY</p>
+                <img class="dot" src="images/dot.png" alt="separator">
+                <p class="tech-date">Back End Dev</p>
+                <img class="dot" src="images/dot.png" alt="separator">
+                <p class="tech-date">2015</p>  
+             </div>
+             <img src="images/popup-img.svg" alt="">
+             <div class="bottom">
+                <div class="left"><p class="popup-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea</p></div>
+                 <div class="right">
+                    <ul class="project-languages popup-languages">
+                        <li class="project-list">html</li>
+                        <li class="project-list">css</li>
+                        <li class="project-list">javaScript</li>
+                     </ul>
+                     <div class="see-btns">
+                        <button class="see-btn">See live<img src="images/seeLive.svg" alt=""></button>
+                        <button class="see-btn">See Source<img src="images/seeSource.svg" alt=""></button>
+                     </div>  
+                 </div>   
+                </div>
+            </div>
+            </div>
+    </section>`
   }
 }
 portfolio.innerHTML = projects;
@@ -132,15 +160,17 @@ projectsDiv.forEach((div) => {
 });
 };
 
-  mobileView.addEventListener('change', handleMobileView);
-  handleMobileView(mobileView); 
+mobileView.addEventListener('change', handleMobileView);
+handleMobileView(mobileView); 
  
-const modalContainer = document.getElementById('modal');
+const modalContainer = document.querySelectorAll('#modal');
+console.log(modalContainer)
 
 // eslint-disable-next-line no-unused-vars
-function showModal() {
+function showModal(projectsData) {
   modalContainer.style.display = 'flex';
 }
+
 // eslint-disable-next-line no-unused-vars
 function closeModal() {
   modalContainer.style.display = 'none';
