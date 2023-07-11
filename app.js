@@ -132,7 +132,7 @@ projectsDiv.forEach((div) => {
 });
 };
 
-  mobileView.addListener(handleMobileView);
+  mobileView.addEventListener('change', handleMobileView);
   handleMobileView(mobileView); 
  
 const modalContainer = document.getElementById('modal');
