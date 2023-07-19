@@ -74,7 +74,7 @@ const projectsData = [
     id: 5,
     title: 'Test',
     infos: ['BREW', 'Front-end Dev', 2017],
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    description: 'This is a test description',
     languages: ['HTML', 'CSS', 'JS'],
     image: 'images/div5-bg.jpg',
     seeLive: '#',
@@ -108,26 +108,25 @@ for (let key in projectsData) {
         <li class="project-list">${projectsData[key].languages[2]}</li>
      </ul>
      <button onclick="showModal(${projectsData[key].id})" class="projects-btn" id="btn-project-1">See Project</button>
-    </div> 
-  </div>
-  <section class="modal-container" id="modal">
+    </div>
+    <section class="modal-container" id=${projectsData[key].id}>
         <div class="modal-content">
-            <h1 class="tonic-title">${projectsData[key].title}<button onclick="closeModal()" class="close-modal">X</button></h1>
+            <h1 class="tonic-title">${projectsData[key].title}<button onclick="closeModal(${projectsData[key].id})" class="close-modal">X</button></h1>
             <div class="infos">
-                <p class="canopy">CANOPY</p>
+                <p class="canopy">${projectsData[key].infos[0]}</p>
                 <img class="dot" src="images/dot.png" alt="separator">
-                <p class="tech-date">Back End Dev</p>
+                <p class="tech-date">${projectsData[key].infos[1]}</p>
                 <img class="dot" src="images/dot.png" alt="separator">
-                <p class="tech-date">2015</p>  
+                <p class="tech-date">${projectsData[key].infos[2]}</p>  
              </div>
-             <img src="images/popup-img.svg" alt="">
+             <img src="${projectsData[key].image}" alt="">
              <div class="bottom">
-                <div class="left"><p class="popup-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea</p></div>
+                <div class="left"><p class="popup-description">${projectsData[key].description}</p></div>
                  <div class="right">
                     <ul class="project-languages popup-languages">
-                        <li class="project-list">html</li>
-                        <li class="project-list">css</li>
-                        <li class="project-list">javaScript</li>
+                        <li class="project-list">${projectsData[key].languages[0]}</li>
+                        <li class="project-list">${projectsData[key].languages[1]}</li>
+                        <li class="project-list">${projectsData[key].languages[2]}</li>
                      </ul>
                      <div class="see-btns">
                         <button class="see-btn">See live<img src="images/seeLive.svg" alt=""></button>
@@ -137,7 +136,9 @@ for (let key in projectsData) {
                 </div>
             </div>
             </div>
-    </section>`
+    </section> 
+  </div>
+  `
   }
 }
 portfolio.innerHTML = projects;
@@ -145,6 +146,19 @@ portfolio.innerHTML = projects;
 const mobileView = window.matchMedia("(max-width: 768px)");
 
 const projectsDiv = document.querySelectorAll('.project1');
+
+
+function showModal(modalId) {
+  const modalContent = document.querySelector(`.modal-container[id="${modalId}"]`);
+  modalContent.style.display = 'flex';
+}
+
+// eslint-disable-next-line no-unused-vars
+function closeModal(modalId) {
+  const modalContent = document.querySelector(`.modal-container[id="${modalId}"]`);
+  modalContent.style.display = 'none';
+}
+
 
 function handleMobileView(event) {
 projectsDiv.forEach((div) => {
@@ -162,22 +176,8 @@ projectsDiv.forEach((div) => {
 
 mobileView.addEventListener('change', handleMobileView);
 handleMobileView(mobileView); 
- 
-const modalContainer = document.querySelectorAll('#modal');
-console.log(modalContainer)
-
-// eslint-disable-next-line no-unused-vars
-function showModal(projectsData) {
-  modalContainer.style.display = 'flex';
-}
-
-// eslint-disable-next-line no-unused-vars
-function closeModal() {
-  modalContainer.style.display = 'none';
-}
 
 // email form validation
-
 function validation() {
   const form = document.getElementById('form-validation');
   const formInput = document.getElementById('email').value;
