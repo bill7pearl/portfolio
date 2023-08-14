@@ -2,7 +2,6 @@
 
 # Portfolio: setup and mobile first
 > This is the second project in Microverse journey found in Week 1 Day 3, It emphasizes using the Flexbox & Grid properties in CSS, responsive design and Javascript.
-> Here a presentation video of the project: https://www.loom.com/share/849a95dc92734f40b8b116a8666f8f45
 
 ## Live demo
 https://bill7pearl.github.io/portfolio
